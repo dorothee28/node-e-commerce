@@ -1,0 +1,27 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "Complee Node.js Guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dorothee28/node-e-commerce.git"
+  },
+  "author": "Dorothy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dorothee28/node-e-commerce/issues"
+  },
+  "homepage": "https://github.com/dorothee28/node-e-commerce#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
