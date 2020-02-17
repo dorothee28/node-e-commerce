@@ -3,9 +3,12 @@ const path = require('path');
 
 const router = express.Router();
 
+// Route directory of path function helping for navigation
+const rootDir = require('../utils/path')
+
 // This route reach at /admin/add-product => GET Request
 router.get('/add-product', (req, res, next) => {
-    res.sendFile(path.join(__dirname, '../' , '/views' , 'add-product.html') );
+    res.sendFile(path.join(rootDir , '/views' , 'add-product.html') );
 });
 
 // This route reach at /admin/add-product => POST Request
