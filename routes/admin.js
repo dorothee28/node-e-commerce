@@ -10,7 +10,7 @@ const products = [];
 
 // This route reach at /admin/add-product => GET Request
 router.get('/add-product', (req, res, next) => {
-    res.sendFile(path.join(rootDir , '/views' , 'add-product.html') );
+    res.render('add-product', {pageTitle: 'Add product'})
 });
 
 // This route reach at /admin/add-product => POST Request
