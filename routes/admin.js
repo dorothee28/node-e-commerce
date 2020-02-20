@@ -10,7 +10,12 @@ const products = [];
 
 // This route reach at /admin/add-product => GET Request
 router.get('/add-product', (req, res, next) => {
-    res.render('add-product', {pageTitle: 'Add product', path: '/admin/add-product'})
+    res.render('add-product', 
+    {pageTitle: 'Add product',
+  path: '/admin/add-product',
+  formsCSS: true,
+  productCSS: true ,
+  activeAddProduct: true})
 });
 
 // This route reach at /admin/add-product => POST Request
